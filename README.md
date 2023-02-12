@@ -9,6 +9,8 @@ List of C++ topics and their code snippets!
     * \t Creates a horizontal tab.
     * \\ Inserts a backslash character (\)
     * \" Inserts a double quote character
+* << insertion operator
+* >> extraction operator
 
 ## Package definition and imports
 ```C++
@@ -26,51 +28,84 @@ using namespace std;
 
 ## Printing to Console
 ```C++
-printf("Hello World");
-std::cout << "Hello World!";
-```
-
-## New Line
-```C++
 printf("Hello World \n");
-std::cout << "Hello World!" << std::endl;
+std::cout << "Hello World!";
 ```
 
 ## Data Types
 ```C++
-int a;
-double b;
-char c;
-string d;
-bool e;
+int number; // 2 or 4 bytes. ex: -n, 0, n
+float storeCount; // 4 bytes. ex: -0.3, 0, 0.0193
+double pi; // 8 bytes. ex: -0.01242324, 0, 0.01234232 
+char letter; // 1 byte. ex: 'a', 'z'
+string text; // ex: "Hello"
+bool isValid; // 1 byte. ex: true or false
 ```
-## Constants and Variables
+
+## Constants
+```C++
+const int pi = 3.14;
+```
+
+## Variables
 ```C++
 int myNum = 15;
 
 int myNum2;
 myNum2 = 15;
 ```
-## Operators
-```C++
 
+## Booleans
+```C++
+cout << true; // 1
+cout << false; // 0
 ```
+
+## Scientific Notation
+```C++
+float num1 = 35e5; // This means 3500000 or 35 * 10^5
+double num2 = 35E5;
+```
+
+## Operators
+#### Arithmetic Operators
+```C++
+j + k
+j - k
+j * k
+j / k
+j % k
+++j
+--k
+```
+#### Assignment Operators
+```C++
+j += 5;
+j -= 2;
+j *= 4;
+j /= 9;
+```
+
 ## Conditionals
 ```C++
 
 ```
+
 ## Loops
 ```C++
 
 ```
+
 ## Collections
 ```C++
 
 ```
+
 ## Classes
 ```C++
 
 ```
+
 ## Functions
 ```C++
 int main() {
@@ -78,14 +113,17 @@ int main() {
     return 0; // Ends the main function
 }
 ```
+
 ## Instantiation and Intitialization
 ```C++
 
 ```
+
 ## Inheritance 
 ```C++
 
 ```
+
 ## Composition
 ```C++
 
@@ -93,13 +131,13 @@ int main() {
 
 ------------------------------------------------------------------------------------------------------------------------
 
-# 🙏 References
+# References
 * [LearningLad](https://www.youtube.com/watch?v=77v-Poud_io)
 * https://www.w3schools.com/cpp/cpp_variables.asp
 
 ------------------------------------------------------------------------------------------------------------------------
 
-# 🛠 How to edit?
+# How to edit?
 * C++ 20
 * Use VS Code
 * To preview in VS Code: Cmd + Shift + v
